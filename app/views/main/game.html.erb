@@ -1,0 +1,11 @@
+<h1>Here is your random grid:</h1>
+<p> <%= @new_grid %> </p>
+<form action="/score" method="get">>
+  <label for="grid_size">enter</label>
+  <input type="hidden" name="new_grid" value="<%= @new_grid %> ">
+  <input type="hidden" name="start_time" value="<%= @start_time %> ">
+  <input type="text" id="grid_size" name="attempt" placeholder="your answer">
+  <input type="submit" value="Go!">
+</form>
+
+
