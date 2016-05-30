@@ -21,7 +21,7 @@ class MainController < ApplicationController
 
     def generate_grid(grid_size)
       # TODO: generate random grid of letters
-      grid_size.times.map { ("A".."Z").to_a << "A" + "E" + "U" + "O" + "I").sample }
+      grid_size.times.map { (("A".."Z").to_a << "A" + "E" + "U" + "O" + "I").sample }
     end
 
     def included?(guess, grid)
